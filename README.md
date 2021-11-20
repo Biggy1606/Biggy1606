@@ -1,7 +1,7 @@
 ### Hi there 👋
 
-- 🌱 I’m currently learning `React` `Typescript` and trying to learn `Java`
-- 🔭 I’m currently working on `Minecraft Mods Manager` on my Gitlab 🙀
+- 🌱 I’m currently learning `React`, `Typescript`, `C#` and trying to learn `Java`
+- 🔭 I’m currently working on `Minecraft Mods Manager` on my Gitlab 🙀 __suspended__
 
 <!--
 **Biggy1606/Biggy1606** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
