@@ -40,7 +40,7 @@ services:
     image: postgres:13
     restart: unless-stopped
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: paperless
       POSTGRES_USER: paperless
@@ -62,10 +62,10 @@ services:
       timeout: 10s
       retries: 5
     volumes:
-      - data:/usr/src/paperless/data
-      - media:/usr/src/paperless/media
-      - ./export:/usr/src/paperless/export
-      - ./consume:/usr/src/paperless/consume
+      - ${PAPERLESS_DATA_PATH}:/usr/src/paperless/data
+      - ${PAPERLESS_MEDIA_PATH}:/usr/src/paperless/media
+      - ${PAPERLESS_EXPORT_PATH}:/usr/src/paperless/export
+      - ${PAPERLESS_CONSUME_PATH}:/usr/src/paperless/consume
     env_file: docker-compose.env
     environment:
       PAPERLESS_REDIS: redis://broker:6379
@@ -81,8 +81,3 @@ services:
   tika:
     image: apache/tika
     restart: unless-stopped
-
-volumes:
-  data:
-  media:
-  pgdata:
