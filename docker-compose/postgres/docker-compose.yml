@@ -1,0 +1,20 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: zaq1@WSX
+      POSTGRES_USER: admin
+    volumes:
+      - ${POSTGRES_DATA_PATH}:/var/lib/postgresql
+
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
