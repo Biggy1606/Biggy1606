@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin
+    container_name: jellyfin
+    network_mode: "host"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Warsaw
+      - JELLYFIN_PublishedServerUrl=192.168.55.250 #optional
+    volumes:
+      - ${JELLYFIN_LIBRARY_PATH}:/config
+      - ${JELLYFIN_TVSERIES_PATH}:/data/tvshows
+      - ${JELLYFIN_MOVIES_PATH}:/data/movies
+    ports:
+      - 8096:8096
+        #- 8920:8920 #HTTPS optional
+      - 7359:7359/udp #Discovery in network optional
+      - 1900:1900/udp #DLNA optional
+    restart: unless-stopped
