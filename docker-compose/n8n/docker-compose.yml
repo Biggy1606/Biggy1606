@@ -5,6 +5,9 @@ services:
   postgres:
     image: postgres:latest
     restart: always
+    # SELinux Enforced specyfic
+    # security_opt:
+    #   - label=type:n8n_postgres_container.process
     environment:
       - POSTGRES_USER
       - POSTGRES_PASSWORD
@@ -18,6 +21,9 @@ services:
   n8n:
     image: n8nio/n8n:latest
     restart: always
+    # SELinux Enforced specyfic
+    # security_opt: 
+    #   - label=type:n8n_container.process
     environment:
       - DB_TYPE=postgresdb
       - DB_POSTGRESDB_HOST=postgres

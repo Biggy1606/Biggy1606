@@ -3,6 +3,8 @@ services:
   ferdi-server:
     image: getferdi/ferdi-server
     container_name: ferdi-server
+    security_opt:
+      - label=type:ferdi_container.process
     environment:
       - NODE_ENV=development
       - APP_URL=localhost
