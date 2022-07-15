@@ -13,23 +13,23 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
-  # mssql:
-  #   image: mcr.microsoft.com/mssql/server:2019-latest
-  #   user: root
-  #   container_name: lupa_mssql
-  #   # network_mode: "host"
-  #   environment:
-  #     ACCEPT_EULA: Y
-  #     SA_PASSWORD: Qaz12345
-  #     MSSQL_PID: Developer
-  #     # MSSQL_AGENT_ENABLED: 1
-  #   restart: unless-stopped
-  #   volumes:
-  #     - ${MSSQL_DATA_PATH}:/var/opt/mssql/data
-  #     - ${MSSQL_LOGS_PATH}:/var/opt/mssql/logs
-  #   ports:
-  #     - 1433:1433
-  #     - 1434:1434/udp
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    user: root
+    container_name: lupa_mssql
+    # network_mode: "host"
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: Qaz12345
+      MSSQL_PID: Developer
+      # MSSQL_AGENT_ENABLED: 1
+    restart: unless-stopped
+    volumes:
+      - ${MSSQL_DATA_PATH}:/var/opt/mssql/data
+      - ${MSSQL_LOGS_PATH}:/var/opt/mssql/logs
+    ports:
+      - 1433:1433
+      - 1434:1434/udp
   # postgres:
   #   image:
   #   container_name: lupa_postgres
