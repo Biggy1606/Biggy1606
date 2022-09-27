@@ -1,32 +1,47 @@
 # Use postgres/example user/password credentials
-version: '3.1'
+version: '3.7'
 
 services:
-  #postgres-my-first-convig-v1
-  # db:
-  #   image: postgres
-  #   restart:  unless-stopped
-  #   environment:
-  #     POSTGRES_PASSWORD: zaq1@WSX
-  #     POSTGRES_USER: admin
-  #   volumes:
-  #     - ${POSTGRES_DATA_PATH}:/var/lib/postgresql
-  #adminer
-  adminer:
-    image: adminer
-    restart: unless-stopped
+  # postgres-my-first-convig-v1
+  db:
+    image: postgres:latest
+    container_name: postgres-db
+    hostname: rog
+    # network_mode: "host"
     ports:
-      - 8080:8080
-  #postgres-stolen-config
-  postgres:
-    container_name: postgres_compose
+      - 5432:5432
+    restart:  unless-stopped
     environment:
-      PGDATA: /var/lib/postgresql/data/guacamole
-      POSTGRES_DB: guacamole_db
-      POSTGRES_PASSWORD: 'ChooseYourOwnPasswordHere1234'
-      POSTGRES_USER: guacamole_user
-    image: postgres:13.4      
-    restart: unless-stopped
+      POSTGRES_PASSWORD: zaq1@WSX # defult user is postgres
+      # POSTGRES_USER: admin
+      # POSTGRES_PASSWORD: /run/secrets/postgres_password
+      # POSTGRES_USER: /run/secrets/postgres_user
     volumes:
-      - ./init:/docker-entrypoint-initdb.d:ro
-      - ./data:/var/lib/postgresql/data:rw
+      - ${POSTGRES_DATA_PATH}:/var/lib/postgresql
+    secrets:
+      - postgres_password
+      - postgres_user
+  # adminer
+  # adminer:
+  #   image: adminer:latest
+  #   restart: unless-stopped
+  #   ports:
+  #     - 8080:8080
+  # postgres-stolen-config
+  # postgres:
+  #   container_name: postgres_compose
+  #   environment:
+  #     PGDATA: /var/lib/postgresql/data/guacamole
+  #     POSTGRES_DB: guacamole_db
+  #     POSTGRES_PASSWORD: 'ChooseYourOwnPasswordHere1234'
+  #     POSTGRES_USER: guacamole_user
+  #   image: postgres:13.4      
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./init:/docker-entrypoint-initdb.d:ro
+  #     - ./data:/var/lib/postgresql/data:rw
+secrets:
+  postgres_user:
+    file: ./secrets/postgres_user.txt # put admin password in this file
+  postgres_password:
+    file: ./secrets/postgres_password.txt # put admin password in this file

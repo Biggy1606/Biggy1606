@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  filebrowser:
+    container_name: filebrowser
+    image: filebrowser/filebrowser
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${FILEBROWSER_SRV_PATH}:/srv
+      - ${FILEBROWSER_DB_PATH}:/database/filebrowser.db
+      - ${FILEBROWSER_JSON_PATH}:/config/settings.json
