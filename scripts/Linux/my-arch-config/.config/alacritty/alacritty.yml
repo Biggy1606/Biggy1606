@@ -1,0 +1,45 @@
+font:
+  normal:
+    family: JetbrainsMono Nerd Font
+    style: Regular
+  size: 13
+colors:
+  name: bl1nk
+  author: Biggy1606
+  primary:
+    background: "#121212"
+    foreground: "#a0a0a0"
+    dim_foreground: "#a0a0a0"
+    bright_foreground: "#ffffff"
+    dim_background: "#121212"
+    bright_background: "#121212"
+  # cursor:
+  #   text: "#090300"
+  #   cursor: "#a5a2a2"
+  normal:
+    black: "#1b1d1e"
+    red: "#f92672"
+    green: "#82b414"
+    yellow: "#fd971f"
+    blue: "#4e82aa"
+    magenta: "#8c54fe"
+    cyan: "#465457"
+    white: "#ccccc6"
+  bright:
+    black: "#505354"
+    red: "#ff5995"
+    green: "#b6e354"
+    yellow: "#feed6c"
+    blue: "#0c73c2"
+    magenta: "#9e6ffe"
+    cyan: "#899ca1"
+    white: "#f8f8f2"
+  dim:
+    black: "#1b1d1e"
+    red: "#f92672"
+    green: "#82b414"
+    yellow: "#fd971f"
+    blue: "#4e82aa"
+    magenta: "#8c54fe"
+    cyan: "#465457"
+    white: "#ccccc6"
