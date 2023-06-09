@@ -21,7 +21,7 @@ services:
       - /sys:/host/sys:ro
       - /etc/os-release:/host/etc/os-release:ro
     environment:
-      - NETDATA_CLAIM_TOKEN=OEAQSoWkut-nUfxxDUkOnVe3XjbrYa0IIRcH0JaiEIMq1_h8w1FSWuppH08ESa0LJn8lANxO8jzGE6d8t4P9xs-C6GF2c4AmvsYVd8NpxT9YxWtZfqQbebCaGYo2Jjcw8IHf6WY
+      - NETDATA_CLAIM_TOKEN=token_here
       - NETDATA_CLAIM_URL=https://app.netdata.cloud
       - NETDATA_CLAIM_ROOMS=
 

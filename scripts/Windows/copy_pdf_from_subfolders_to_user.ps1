@@ -1,4 +1,4 @@
-Write-Host "Searching .pdf files in '$(Get-Location)'. Please wait..."
+Write-Host "Searching .pdf files in '$(Get-Location)' and up to 99 directories depth. Please wait..."
 $size = 0
 $files = Get-ChildItem -File -Depth 99 *.pdf
 $files | ForEach-Object { 

@@ -1,0 +1,1 @@
+Get-WinEvent -FilterHashtable @{StartTime = (Get-Date).AddDays(-1)} | Out-GridView

@@ -8,7 +8,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Warsaw
-      - JELLYFIN_PublishedServerUrl=192.168.55.250 #optional
+      - JELLYFIN_PublishedServerUrl=127.0.0.1 #optional
     volumes:
       - ${JELLYFIN_LIBRARY_PATH}:/config
       - ${JELLYFIN_TVSERIES_PATH}:/data/tvshows

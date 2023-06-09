@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-- 🌱 I’m currently learning `React`, `Typescript`, `C#` and trying to learn `Java`
-- 🔭 I’m currently working on `Minecraft Mods Manager` on my Gitlab 🙀 __suspended__
-- ⚡ Fun fact: I'm self learner 😁
+- 🌱 I’m currently learning `React`, `Typescript`, `C#`. Most difficult is `C#` for me.
+- 🔭 I’m currently working on projects at work that are `super classified` 🤣
+- ⚡ Fun fact: I like work with `PLCs` 😮 (mostly `Siemens S7`) and integrate them with web techologies
 
 <!--
 **Biggy1606/Biggy1606** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
