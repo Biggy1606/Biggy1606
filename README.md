@@ -1,9 +1,9 @@
 ### Hi there 👋
+- 🌱 I'm currently learning Next.js, which is quite challenging! 😅
+- ⚡ I feel fluent in JavaScript and TypeScript.
+- 🔭 I'm currently working on projects that connect to databases and display data. 🤓
+- 🎪 Fun fact: I enjoy working with PLCs 🤖 (mostly Siemens S7) and integrating them with web technologies. However, it's no simple task! 💪
 
-- 🌱 I’m currently learning `Next.js` 😰.
-- ⚡ I feel fluent in `Javascript` and `Typescript`
-- 🔭 I’m currently working on projects where connets to db and displays data 🙄
-- 🎪 Fun fact: I like work with `PLCs` 😮 (mostly `Siemens S7`) and integrate them with web techologies. _It's not easy, though_
 
 <!--
 **Biggy1606/Biggy1606** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
