@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-- 🌱 I’m currently learning `C#` 😰.
+- 🌱 I’m currently learning `Next.js` 😰.
 - ⚡ I feel fluent in `Javascript` and `Typescript`
-- 🔭 I’m currently working on projects at work that are `super classified` 🤣
-- 🎪 Fun fact: I like work with `PLCs` 😮 (mostly `Siemens S7`) and integrate them with web techologies
+- 🔭 I’m currently working on projects where connets to db and displays data 🙄
+- 🎪 Fun fact: I like work with `PLCs` 😮 (mostly `Siemens S7`) and integrate them with web techologies. _It's not easy, though_
 
 <!--
 **Biggy1606/Biggy1606** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
