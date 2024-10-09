@@ -1,4 +1,9 @@
-### Hi there 👋
+
+
+## Hi there 👋
+### I'am mostly active on my gitea!
+I placed here repositories from school tasks and projects that I think are worth publishing here.
+### By the way:
 - 🌱 I'm currently learning Next.js, which is quite challenging! 😅
 - ⚡ I feel fluent in JavaScript and TypeScript.
 - 🔭 I'm currently working on projects that connect to databases and display data. 🤓
