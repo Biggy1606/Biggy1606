@@ -3,7 +3,9 @@
 ## Hi there 👋
 ### I'am mostly active on my gitea!
 I placed here repositories from school tasks and projects that I think are worth publishing here.
+
 ![Trophies](https://github-profile-trophy.vercel.app/?username=biggy1606&theme=monokai&no-frame=true)
+
 ### By the way:
 - 🌱 I'm currently learning Next.js, which is quite challenging! 😅
 - ⚡ I feel fluent in JavaScript and TypeScript.
